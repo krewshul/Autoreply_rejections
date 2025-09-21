@@ -1,11 +1,14 @@
 Hi {{ name }},
 
-Thank you for your interest in the {{ role }} position at {{ company }} and for the time you invested in the application process. After careful consideration, we’ve decided not to move forward at this time. 
+Thank you sincerely for your interest in the {{ role }} role at {{ company }} and for the time you invested{% if stage %} during the {{ stage }} stage{% endif %}.
 
-{{ reason }}
+After careful review, we won’t be moving forward at this time. We understand this news can be disappointing. Please know this decision reflects the close alignment we needed for this opening rather than your capabilities.
 
-We truly value the effort you put into your application and encourage you to stay connected with {{ company }}. New opportunities are regularly posted on our Careers Page, and we’d be glad to see you apply again in the future if a role matches your background.
+{% if reason %}{{ reason }}{% else %}This was a highly competitive process with many strong applicants.{% endif %}
 
-Wishing you every success in your career search,
+We’re grateful for your interest in {{ company }} and encourage you to consider us again in the future. Current opportunities are posted on our Careers page
+{% if careers_url %}({{ careers_url }}){% endif %}.
+
+Wishing you every success in your search,
 {{ sender_name }}
-{{ sender_title 
+{{ sender_title }}
