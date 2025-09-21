@@ -1,0 +1,11 @@
+Hi {{ name }},
+
+Thank you for your interest in the {{ role }} position at {{ company }} and for the time you invested in the application process. After careful consideration, we’ve decided not to move forward at this time. 
+
+{{ reason }}
+
+We truly value the effort you put into your application and encourage you to stay connected with {{ company }}. New opportunities are regularly posted on our Careers Page, and we’d be glad to see you apply again in the future if a role matches your background.
+
+Wishing you every success in your career search,
+{{ sender_name }}
+{{ sender_title 
